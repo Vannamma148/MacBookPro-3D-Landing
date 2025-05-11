@@ -1,0 +1,70 @@
+html,body{
+    width:100%;
+    height: 100%;
+}
+
+#root{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+  
+  /* Lightning Text Effect */
+  h3 {
+    position: relative;
+    color: #fff;
+    text-shadow: 
+      0 0 8px #fff,
+      0 0 16px #0ff,
+      0 0 32px #0ff,
+      0 0 64px #0ff;
+    animation: flicker 2s infinite;
+  }
+  .title-container {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.5s;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
+  @keyframes flicker {
+    0%, 100% {
+      text-shadow: 
+        0 0 8px #fff,
+        0 0 16px #0ff,
+        0 0 32px #0ff,
+        0 0 64px #0ff;
+    }
+    50% {
+      text-shadow: 
+        0 0 6px #fff,
+        0 0 12px #0ff,
+        0 0 24px #0ff,
+        0 0 48px #0ff;
+    }
+  }
+  /* navbar */
+  .navbar a {
+    z-index: 3;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    color: #00ffea;
+    text-shadow: 0 0 6px #00ffea;
+  }
+  
+  .line{
+    border-bottom: 0.4px solid #333;
+  }

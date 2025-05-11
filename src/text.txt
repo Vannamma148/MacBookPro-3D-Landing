@@ -1,0 +1,16 @@
+import { Canvas } from '@react-three/fiber'
+import React from 'react';
+import "./Style.css"
+import { OrbitControls } from '@react-three/drei';
+
+export default function App() {
+  return (
+    //3js
+   <Canvas>
+    <OrbitControls/>
+    <mesh>
+      <boxGeometry/>
+    </mesh>
+   </Canvas>
+  )
+}
